@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Validation</title>
+	<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<link rel='icon' href='favicon1.ico' type='image/x-icon'/ >
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+	<nav class="navbar navbar-light bg-danger">
+  	  <a class="navbar-brand" href="index-js.html">
+    	<h1 class="text-white navbar-title">Validation JavaScript</h1>
+  	  </a>
+  	  <ul class="nav">
+  			<li class="nav-item">
+    			<a class="nav-link active" id="red-hover" href="index.html">HTML</a>
+  			</li>
+  			<li class="nav-item">
+    			<a class="nav-link" id="red-hover" href="index-js.html">Javascript</a>
+  			</li>
+  			<li class="nav-item">
+    			<a class="nav-link" id="red-hover" href="index-php.php">PHP</a>
+  			</li>
+		</ul>
+	</nav>
+
+	<div class="alert alert-danger alert-dismissible fade show" id="red_alert" role="alert">
+  		This is a danger alert—check it out!
+  		  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    		 <span aria-hidden="true">&times;</span>
+  		  </button>
+	</div>
+
+	<div class="container">
+		<form onsubmit="return validateForm()" name="myForm">
+		  <div class="form-group">
+		    <label for="formGroupExampleInput">Voornaam</label>
+		    <input type="text" id="border_red" class="form-control" id="formGroupExampleInput" name="fname">
+		  </div>
+		  <div class="form-group">
+		    <label for="formGroupExampleInput">Achternaam</label>
+		    <input type="text" id="border_red" class="form-control" id="formGroupExampleInput" name="lname">
+		  </div>
+		  <div class="form-group">
+		    <label for="formGroupExampleInput">Postcode</label>
+		    <input type="text" id="border_red" class="form-control" id="formGroupExampleInput" name="postalcode">
+		  </div>
+		  <div class="form-group">
+		    <label for="formGroupExampleInput">Woonplaats</label>
+		    <input type="text" id="border_red" class="form-control" id="formGroupExampleInput" name="livingarea">
+		  </div>
+		  <div class="form-group">
+		    <label for="formGroupExampleInput2">E-mail</label>
+		    <input type="email" id="border_red" class="form-control" id="formGroupExampleInput2" name="email">
+		  </div>
+		  <div class="form-group">
+		    <label for="formGroupExampleInput3">Telefoonnummer</label>
+		    <input type="tel" id="border_red" pattern="[0-9]{10}" class="form-control" id="formGroupExampleInput2" name="phonenumber">
+		  </div>
+		  <div class="form-group">
+		    <label for="formGroupExampleInput3">Nummer</label>
+		    <input type="number" class="form-control" id="formGroupExampleInput2" name="number">
+		  </div>
+		  <div class="form-group">
+		    <label for="formGroupExampleInput3">Kies hier een kleur</label>
+		    <input type="color" class="form-control" id="formGroupExampleInput2" name="color">
+		  </div>
+		  <div class="form-group">
+		    <label for="formGroupExampleInput3">Privacyverklaring</label>
+		    <input type="checkbox" class="form-control" id="formGroupExampleInput2" name="privacy">
+		  </div>
+		  <button type="submit" id="submit-button" class="btn btn-danger" onclick="validateForm();">Opslaan</button>
+		</form>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
